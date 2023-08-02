@@ -1,0 +1,26 @@
+public class HttpServletRequest {
+    private Socket socket;
+
+    public HttpServletRequest(Socket socket) {
+        this.socket = socket;
+    }
+
+    private String readLine() throws IOException { //被重用的代码出现的异常基本上都需要在方法上声明抛出，因为调用这段代码时处理异常的方式可能不同
+        InputStream is = socket.getInputStream();
+        int d;
+        char pre = '0';
+        char cur = '0';
+        StringBuilder sb = new StringBuilder();
+        while ((d = is.read()) != -1) {
+            cur = (char) d;
+            if (pre == 13 && cur == 10) {
+                break;
+            }
+            sb.append(cur);
+            pre = cur;
+        }
+        String line = sb.toString().trim();
+
+        return line;
+    }
+}
