@@ -1,6 +1,7 @@
 package com.birdboot.core;
 
 import com.birdboot.http.HttpServletRequest;
+import com.birdboot.http.HttpServletResponse;
 
 import java.io.*;
 import java.net.Socket;
@@ -19,33 +20,24 @@ public class ClientHandler implements Runnable {
     public void run() {
         try {
             HttpServletRequest request = new HttpServletRequest(socket);
+            HttpServletResponse response = new HttpServletResponse(socket);
             String uri = request.getUri();
             System.out.println("uri is " + uri);
-
             File baseDir = new File(ClientHandler.class.getClassLoader().getResource(".").toURI());
             File staticDir = new File(baseDir, "static");
             File file = new File(staticDir, uri);
 
-            int statusCode = 200;
-            String statusInfo = "OK";
-            if (!file.exists()) {
-                file = new File(staticDir, "404.html");
-                statusCode = 404;
-                statusInfo = "NotFound";
+            response.setContentFile(file);
+            response.setStatusCode(200);
+            response.setStatusReason("OK");
+
+            if (!file.isFile()) {
+                response.setContentFile(new File(staticDir, "404.html"));
+                response.setStatusCode(404);
+                response.setStatusReason("NotFound");
             }
 
-            println("HTTP/1.1 " + statusCode + " " + statusInfo);
-            println("Content-Type: text/html");
-            println("Content-Length: " + file.length());
-            println("");
-
-            OutputStream os = socket.getOutputStream();
-            InputStream is = new FileInputStream(file);
-            byte[] buf = new byte[1024 * 10];
-            int d;
-            while ((d = is.read(buf)) != -1) {
-                os.write(buf, 0, d);
-            }
+            response.response();
         } catch (IOException | URISyntaxException e) {
             e.printStackTrace();
         } finally {
@@ -56,13 +48,4 @@ public class ClientHandler implements Runnable {
             }
         }
     }
-
-    private void println(String line) throws IOException {
-        OutputStream os = socket.getOutputStream();
-        byte[] buf = line.getBytes(StandardCharsets.ISO_8859_1);
-        os.write(buf);
-        os.write(13);
-        os.write(10);
-    }
-
 }

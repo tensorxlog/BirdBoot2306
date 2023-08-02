@@ -5,23 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d341ee6-9603-482c-824d-f4b371cecb37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/V3/src/main/java/com/birdboot/http/HttpServletRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/V5/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/V5/src/main/java/com/birdboot/core/BirdBootApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/V5/src/main/java/com/birdboot/core/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/V5/src/main/java/com/birdboot/http/HttpServletRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/V5/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/V6/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/V6/src/main/java/com/birdboot/core/BirdBootApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/V6/src/main/java/com/birdboot/core/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/V6/src/main/java/com/birdboot/http/HttpServletRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/V6/src/main/resources/static/classtable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/V6/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/V6/src/main/resources/static/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/V6/src/main/resources/static/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/V6/src/main/resources/static/reg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/V6/src/main/resources/static/writeArticle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/V7/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/V7/src/main/java/com/birdboot/core/BirdBootApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/V7/src/main/java/com/birdboot/core/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/V7/src/main/java/com/birdboot/http/HttpServletRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/V7/src/main/java/com/birdboot/http/HttpServletResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/V7/src/main/resources/static/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/V7/src/main/resources/static/classtable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/V7/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/V7/src/main/resources/static/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/V7/src/main/resources/static/reg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/V7/src/main/resources/static/writeArticle.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/V3/src/main/java/com/birdboot/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/V3/src/main/java/com/birdboot/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/V4/src/main/java/com/birdboot/http/HttpServletRequest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/V6/src/main/java/com/birdboot/core/BirdBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/V6/src/main/java/com/birdboot/core/BirdBootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/V6/src/main/java/com/birdboot/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/V6/src/main/java/com/birdboot/core/ClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,17 +61,17 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/tedu/IdeaProjects/BirdBoot2306/V6/src/main/resources/static",
+    "last_opened_file_path": "C:/Users/tedu/IdeaProjects/BirdBoot2306/V7",
     "settings.editor.selected.configurable": "fileTemplates"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tedu\IdeaProjects\BirdBoot2306\V7" />
       <recent name="C:\Users\tedu\IdeaProjects\BirdBoot2306\V6\src\main\resources\static" />
       <recent name="C:\Users\tedu\IdeaProjects\BirdBoot2306\V6" />
       <recent name="C:\Users\tedu\IdeaProjects\BirdBoot2306\V5\src\main\resources\static" />
       <recent name="C:\Users\tedu\IdeaProjects\BirdBoot2306\V5" />
-      <recent name="C:\Users\tedu\IdeaProjects\BirdBoot2306\V4" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tedu\IdeaProjects\BirdBoot2306\V5\src\main\resources\static" />
@@ -161,7 +163,7 @@
       <updated>1690853634623</updated>
       <workItem from="1690853636302" duration="14259000" />
       <workItem from="1690938867072" duration="2821000" />
-      <workItem from="1690941700262" duration="7424000" />
+      <workItem from="1690941700262" duration="19895000" />
     </task>
     <servers />
   </component>
